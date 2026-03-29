@@ -31,7 +31,7 @@ What is ASCII Art?
 4. ASCII Art is pictures done with characters for example the sideways-smiley :-) or rose @}}>-----
 
 In short: I want my face in my shell before omp loads:
-
+```
 PowerShell 7.6.0
                     ..       *#=*::       habiwan@MYWINDOWSMACHINES
                  +@@@@@#.     ::...::.    ---------------
@@ -93,3 +93,4 @@ Last login: Sun Mar 29 00:00:00 2026 from yourpants
                                       Disk (/zram): 8.00 KiB / 30.53 GiB (0%) - ext4
                                       Local IP (eth0): 256.348.527.HA/15
                                       Locale: same as above, now en_GB always UTF-8
+```
