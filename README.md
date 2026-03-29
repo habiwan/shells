@@ -11,8 +11,8 @@ What is a Shell / CLI / CMD?
 
 What is Oh-My-Posh?
 1. This is a script that makes the CLI look nice 
-2. There are version for Linux and for Windows
-3. In Windows it's prone to break, either M1cr0shl0ttpf or 'omp' updates or something...
+2. There are versions for Linux and for Windows
+3. In Windows it's prone to break, either M1cr0$hl0ttpf or 'omp' updates or something...
 4. I want it fixed on Windows hence Powershell script ps1 should include that
 
 What is Git?
