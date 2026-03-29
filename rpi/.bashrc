@@ -233,3 +233,16 @@ function retropie_welcome() {
 
 retropie_welcome
 # RETROPIE PROFILE END
+sync-shells() {
+    cd ~/dotfiles
+    echo "Updating from GitHub..."
+    git pull origin main
+    echo "Backing up Pi config..."
+    cp ~/.bashrc ~/dotfiles/rpi/
+    git add .
+    git commit -m "Auto-sync Pi: $(date +'%Y-%m-%d %H:%M')"
+    git push origin main
+    echo "Done! System is in sync."
+    cd - > /dev/null
+}
+alias sync='sync-shells'
