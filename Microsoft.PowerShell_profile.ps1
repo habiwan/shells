@@ -9,3 +9,16 @@ function fixomp {
 }
 fastfetch --logo "$HOME\hwk.txt"
 oh-my-posh init pwsh | Invoke-Expression
+
+function Sync-Shells {
+    Set-Location "C:\src\dotfiles"
+    Write-Host "Updating from GitHub..." -ForegroundColor Cyan
+    git pull origin main
+    Write-Host "Backing up Windows config..." -ForegroundColor Cyan
+    git add .
+    git commit -m "Auto-sync Windows: $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
+    git push origin main
+    Write-Host "Done! System is in sync." -ForegroundColor Green
+    Set-Location $HOME
+}
+New-Alias -Name sync -Value Sync-Shells -Force
